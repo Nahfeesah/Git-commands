@@ -52,76 +52,40 @@ b. Merge the changes from another branch.
 c. git checkout (branch-name). Switch to the branch you want to merge into.
 d. git merge (branch to merge). Replace <branch-to-merge> with the name of the branch you wish to merge.
 
-## 9. Renaming Branches
-
+9. Renaming Branches
 Steps:
-1. Rename the current branch.
+a. Rename the current branch.
+b. git branch -m (new branch name). This renames the current branch to the specified (new-branch-name).
 
-### Command:
-```bash
-git branch -m <new-branch-name>
-```
+10. Creating Pull Requests
+Steps:
+a. Push your changes to a remote branch.
+b. Create a Pull Request (PR) from the GitHub repository.
+Instructions:
+a. Navigate to your GitHub repository.
+b. Click on "Pull Requests."
+c. Click on "New Pull Request" and choose the branch you'd like to merge into the main branch.
 
-This renames the current branch to the specified `<new-branch-name>`.
+11. Reviewing and Merging Pull Requests
+Steps:
+a. Review the code changes in a Pull Request.
+b. Approve and merge the Pull Request if everything is correct.
+Instructions:
+   -Open the Pull Request on GitHub.
+   -Review the code changes and click "Merge Pull Request" to finalize the changes.
 
----
-
-## 10. Creating Pull Requests
-
-### Steps:
-1. Push your changes to a remote branch.
-2. Create a Pull Request (PR) from the GitHub repository.
-
-### Instructions:
-1. Navigate to your GitHub repository.
-2. Click on "Pull Requests."
-3. Click on "New Pull Request" and choose the branch you'd like to merge into the main branch.
-
----
-
-## 11. Reviewing and Merging Pull Requests
-
-### Steps:
-1. Review the code changes in a Pull Request.
-2. Approve and merge the Pull Request if everything is correct.
-
-### Instructions:
-1. Open the Pull Request on GitHub.
-2. Review the code changes and click "Merge Pull Request" to finalize the changes.
-
----
-
-## 12. Reverting Pull Requests
-
-### Steps:
-1. Use the GitHub UI to revert a merged Pull Request.
-
-### Instructions:
-1. Navigate to the merged Pull Request on GitHub.
-2. Click on the "Revert" button to create a new PR that undoes the changes made by the original PR.
-
----
-
-### How to Push This README.md to Your GitHub Repository
-
-### Steps:
+12. Reverting Pull Requests
+Steps:
+a. Use the GitHub UI to revert a merged Pull Request.
+Instructions:
+   -Navigate to the merged Pull Request on GitHub.
+   -Click on the "Revert" button to create a new PR that undoes the changes made by the original PR.
+How to Push This README.md to Your GitHub Repository
+Steps:
 1. Stage your README.md file.
 2. Commit the changes.
 3. Push the file to your GitHub repository.
+   git add README.md
+   git commit -m "Added detailed README.md"
+   git push origin <branch-name>
 
-### Commands:
-```bash
-git add README.md
-git commit -m "Added detailed README.md"
-git push origin <branch-name>
-```
-
----
-
-By following this guide, you can perform essential Git operations with ease. Feel free to contribute and improve this repository as needed.
-
----
-
-Once you’ve written this content into your `README.md` file, push it to your GitHub repository and submit the link as required.
-
-If you need further clarifications, let me know!
